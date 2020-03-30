@@ -1,95 +1,116 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-      <title>Yjere | Contacto</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link href="css/style.css" rel="stylesheet" type="text/css" />
-      <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
-      <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-   </head>
-   <body>
-      <div class="main">
-         <div class="header">
-            <div class="header_resize">
-               <div class="searchform">
-               </div>
-               <div class="logo">
-                  <h1><a href="index.html">Y<span>JERE</span></a></h1>
-               </div>
-               <div class="clr"></div>
-               <div class="menu_nav">
-                  <ul>
-                     <li><a href="index.html"><span>Inicio</span></a></li>
-                     <li><a href="services.html"><span>Servicios</span></a></li>
-                     <!--<li><a href="products.html"><span>Productos</span></a></li>-->
-                     <li class="active"><a href="contact.html"><span>Contacto</span></a></li>
-                  </ul>
-               </div>
-               <div class="clr"></div>
-               <div class="clr"></div>
+<!DOCTYPE html>
+<html>
+    <title>Yjere - Sistemas de informaci&oacute;n</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/w3-theme-blue-grey.css" />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <style>
+        html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+    <body class="w3-theme-l5">
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme-d2 w3-left-align w3-medium">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                <!--fa-home, fa-globe, fa-user, fa-server, fa-terminal, fa-envelope, fa-phone, fa-mobile, fa-whatsapp, fa-skype, fa-linkedin-->
+                <span class="w3-bar-item w3-padding-large w3-theme-d4" title="Sistemas de informaci&oacute;n">Yjere</span>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Inicio"><i class="fa fa-home"></i>&nbsp;Inicio</a>
+                <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Servicios"><i class="fa fa-server"></i>&nbsp;Servicios</a>
+                <!--
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Proyectos"><i class="fa fa-terminal"></i>&nbsp;Proyectos</a>
+                    -->
+                <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contacto"><i class="fa fa-envelope"></i>&nbsp;Contacto</a>
+                <!--
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Cont&aacute;ctenos">Cont&aacute;ctenos</a>
+                    -->
             </div>
-         </div>
-         <div class="content">
-            <div class="content_resize">
-               <div class="mainbar">
-                  <div class="article">
-                     <br/>
-                     <br/>
-                     <h2><span>Cont&aacute;ctenos</span></h2>
-                     <div class="clr"></div>
-                     <p>Por favor, s&iacute;rvase escribir cualquier duda o consulta en el siguiente formulario. Recibir&aacute; una respuesta a la brevedad posible.</p>
-                  </div>
-                  <div class="article">
-                     <h2><span>Env&iacute;enos un</span> mensaje</h2>
-                     <br/>
-                     <br/>
-                     <div class="clr"></div>
-                     <!-- Do not change the code! -->
-                     <a id="foxyform_embed_link_141564" href="http://es.foxyform.com/">foxyform</a>
-                     <script type="text/javascript">
-                        (function(d, t){
-                           var g = d.createElement(t),
-                        	   s = d.getElementsByTagName(t)[0];
-                           g.src = "http://es.foxyform.com/js.php?id=141564&sec_hash=d769a57a634&width=900px";
-                           s.parentNode.insertBefore(g, s);
-                        }(document, "script"));
-                     </script>
-                     <!-- Do not change the code! -->
-                  </div>
-               </div>
-               <div class="clr"></div>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-medium">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">&nbsp;</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home"></i>&nbsp;Inicio</a>
+            <a href="services.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-server"></i>&nbsp;Servicios</a>
+            <!--<a href="#" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-terminal"></i>&nbsp;Proyectos</a>-->
+            <a href="contact.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-envelope"></i>&nbsp;Contacto</a>
+        </div>
+        <!-- Page Container -->
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+            <!-- The Grid -->
+            <div class="w3-row">
+                <div class="w3-col m12">
+                    <div class="w3-container w3-card w3-white w3-round w3-margin" id="divContact">
+                        <br>
+                        <h4>Datos de contacto</h4>
+                        <br>
+                        <i class="fa fa-phone"></i>&nbsp;&nbsp;+54 351 6360647<br />
+                        <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+54 351 6360647<br />
+                        <i class="fa fa-skype"></i>&nbsp;&nbsp;oocanto<br />
+                        <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:contacto.yjere@gmail.com">contacto.yjere@gmail.com</a><br />
+                        <hr class="w3-clear">
+                        <p>Adem&aacute;s de disponer de los medios anteriores, Ud. puede remitir cualquier duda o consulta en el siguiente formulario. Recibir&aacute; una respuesta a la brevedad posible.</p>
+                        <a id="foxyform_embed_link_141564" href="http://es.foxyform.com/">foxyform</a>
+                        <script type="text/javascript">
+                            (function(d, t){
+                                var divPadding = 16;
+                                var width = document.getElementById("divContact").clientWidth - (divPadding * 2);
+                               var g = d.createElement(t),
+                                   s = d.getElementsByTagName(t)[0];
+                               g.src = "http://es.foxyform.com/js.php?id=141564&sec_hash=d769a57a634&width=" + width + "px";
+                               s.parentNode.insertBefore(g, s);
+                            }(document, "script"));
+                        </script>
+                        <br/>
+                    </div>
+                    <br/>
+                </div>
+                <!-- End Grid -->
             </div>
-         </div>
-         <div class="fbg">
-            <div class="fbg_resize">
-               <div class="col c2">
-                  <h2>Servicios</h2>
-                  <p>Explore nuestros servicios</p>
-                  <ul class="fbg_ul">
-                     <li><a href="services.html">Desarrollo de Software</a></li>
-                     <li><a href="services.html">Consultor&iacute;a Especializada</a></li>
-                     <li><a href="services.html">Capacitaci&oacute;n</a></li>
-                  </ul>
-               </div>
-               <div class="col c3">
-                  <h2>Cont&aacute;ctenos</h2>
-                  <p>No dude en contactarse por cualquiera de los siguientes medios:</p>
-                  <p class="contact_info">
-                     <span>Tel&eacute;fono:</span> +54-351-6360647<br />
-                     <span>E-mail:</span> <a href="#">contacto.yjere@gmail.com</a> 
-                  </p>
-               </div>
-               <div class="clr"></div>
-            </div>
-         </div>
-         <div class="footer">
-            <div class="footer_resize">
-               <div align=center>
-                  <p class="lf">&copy; 2016 <a href="http://www.yjere.tk">Yjere</a>.</p>
-               </div>
-               <div style="clear:both;"></div>
-            </div>
-         </div>
-      </div>
+            <!-- End Page Container -->
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- Footer -->
+        <div class="w3-bottom">
+            <footer class="w3-container w3-theme-d3 w3-padding-6">
+                Yjere&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-home"></i>&nbsp;<a href="index.html">Inicio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-server"></i>&nbsp;<a href="services.html">Servicios</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-envelope"></i>&nbsp;<a href="contact.html">Contacto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-phone"></i>&nbsp;&nbsp;+54 351 6360647&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-whatsapp"></i>&nbsp;&nbsp;+54 351 6360647&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-skype"></i>&nbsp;&nbsp;oocanto&nbsp;&nbsp;|&nbsp;&nbsp;
+                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto:contacto.yjere@gmail.com">contacto.yjere@gmail.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                Web site design based on <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+            </footer>
+        </div>
+        <script>
+            // Accordion
+            function myFunction(id) {
+              var x = document.getElementById(id);
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+              } else { 
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className = 
+                x.previousElementSibling.className.replace(" w3-theme-d1", "");
+              }
+            }
+            
+            // Used to toggle the menu on smaller screens when clicking on the menu button
+            function openNav() {
+              var x = document.getElementById("navDemo");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+        </script>
+    </body>
 </html>
