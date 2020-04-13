@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
     <script type="text/javascript">
+        
         var content = null;
         
         // Accordion
@@ -38,27 +39,24 @@
         }
         
         function getElementIdFromUrl(url, element) {
-        
-        if (url != null && url != '') {
-        
-        url = url.replace('&amp;', '&');
-        
-        if (url.indexOf('?') != -1) {
-            var parts = url.split('?');
-            for (var i = 1; i < parts.length; i++) {
+          if (url != null && url != '') {
+            url = url.replace('&amp;', '&');
+            if (url.indexOf('?') != -1) {
+              var parts = url.split('?');
+              for (var i = 1; i < parts.length; i++) {
                 var innerParts = parts[i].toString().split('&');
                 for (var j = 0; j < innerParts.length; j++) {
-                    if (innerParts[j].toString().indexOf('=') != -1) {
-                        var pairs = innerParts[j].toString().split('=');
-                        if (pairs[0] == element) {
-                            return pairs[1];
-                        }
+                  if (innerParts[j].toString().indexOf('=') != -1) {
+                    var pairs = innerParts[j].toString().split('=');
+                    if (pairs[0] == element) {
+                      return pairs[1];
                     }
+                  }
                 }
+              }
             }
-        }
-        }
-        return null;
+          }
+          return null;
         }
         
         
