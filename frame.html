@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <title>Yjere - Sistemas de informaci&oacute;n</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/ico" sizes="48x48" href="img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/w3-theme-blue-grey.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        var content = null;
+        
+        // Accordion
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-theme-d1";
+          } else { 
+            x.className = x.className.replace("w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace(" w3-theme-d1", "");
+          }
+        }
+        
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        function getElementIdFromUrl(url, element) {
+        
+        if (url != null && url != '') {
+        
+        url = url.replace('&amp;', '&');
+        
+        if (url.indexOf('?') != -1) {
+            var parts = url.split('?');
+            for (var i = 1; i < parts.length; i++) {
+                var innerParts = parts[i].toString().split('&');
+                for (var j = 0; j < innerParts.length; j++) {
+                    if (innerParts[j].toString().indexOf('=') != -1) {
+                        var pairs = innerParts[j].toString().split('=');
+                        if (pairs[0] == element) {
+                            return pairs[1];
+                        }
+                    }
+                }
+            }
+        }
+        }
+        return null;
+        }
+        
+        
+        $(document).ready(function() {
+        
+            content = getElementIdFromUrl(window.location.href, 'c');
+        
+          $("#page-header").load("omni/header.html");
+        
+          $("#page-content").load("content/" + content + ".html"); 
+        
+          $("#page-footer").load("omni/footer.html");
+        
+        });
+        
+    </script>
+    <style>
+        html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+    </style>
+    <body class="w3-theme-l5">
+
+        <div id="page-header">
+        </div>
+
+        <div class="w3-container w3-content" style="max-width:1400px;margin-top:20px">
+
+            <div id="page-content">
+            </div>
+            
+        </div>
+        
+        <div id="page-footer">
+        </div>
+    </body>
+</html>
