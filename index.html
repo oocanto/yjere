@@ -15,55 +15,58 @@
     <link rel="stylesheet" href="js/PgwSlideshow/pgwslideshow_light.min.css" />
     <link rel="stylesheet" href="js/PgwSlideshow/pgwslideshow.min.css" />
     <script type="text/javascript">
+    
         // Accordion
         function myFunction(id) {
-          var x = document.getElementById(id);
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-theme-d1";
-          } else { 
-            x.className = x.className.replace("w3-show", "");
-            x.previousElementSibling.className = 
-            x.previousElementSibling.className.replace(" w3-theme-d1", "");
-          }
+        
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-theme-d1";
+            } else { 
+                x.className = x.className.replace("w3-show", "");
+                x.previousElementSibling.className = 
+                x.previousElementSibling.className.replace(" w3-theme-d1", "");
+            }
         }
         
         // Used to toggle the menu on smaller screens when clicking on the menu button
         function openNav() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else { 
-            x.className = x.className.replace(" w3-show", "");
-          }
+        
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else { 
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
         
         $(document).ready(function() {
         
-          $("#page-header").load("html/omni/header.html");
+            $("#page-header").load("html/omni/header.html");
           
-          $("#page-carousel").load("html/content/carousel.html", function() {
-        
-            //Slider
-            var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow({
+            $("#page-carousel").load("html/content/carousel.html", function() {
             
-                mainClassName: 'pgwSlideshowLight',
-                displayList: false,
-                autoSlide: true,
-                transitionEffect : 'fading',
-                adaptiveDuration : 500,
-                transitionDuration: 500,
-                intervalDuration: 10000
+                //Slider
+                var pgwSlideshow = $('.pgwSlideshow').pgwSlideshow({
+                
+                    mainClassName: 'pgwSlideshowLight',
+                    displayList: false,
+                    autoSlide: true,
+                    transitionEffect : 'fading',
+                    adaptiveDuration : 500,
+                    transitionDuration: 500,
+                    intervalDuration: 10000
+                    
+                });
+                
+                pgwSlideshow.startSlide();
             
             });
-            
-            pgwSlideshow.startSlide();
-            
-          });
         
-          $("#page-content").load("html/content/about.html");
+            $("#page-content").load("html/content/about.html");
         
-          $("#page-footer").load("html/omni/footer.html");
+            $("#page-footer").load("html/omni/footer.html");
         
         });
         
